@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@ahrefs/bs-atdgen-codec-runtime": "^2.0.1",
-    "@anuragsoni/routes": "^0.8.0",
+    "@anuragsoni/routes": "^0.9.1",
     "autoprefixer": "^10.0.4",
     "bs-fetch": "^0.6.2",
     "postcss": "^8.1.14",
