@@ -5,7 +5,7 @@
 (version 0.0.1)
 
 (authors "davesnx")
-(license "BSD-2")
+(license "BSD-2-Clause")
 (maintainers "davesnx")
 (source (uri "git+https://github.com/davesnx/async_app.git"))
 (homepage "https://github.com/davesnx/async_app")

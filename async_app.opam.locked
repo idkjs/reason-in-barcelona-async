@@ -4,7 +4,7 @@ synopsis: "Async app synopsis"
 description: "Async app description"
 maintainer: ["davesnx"]
 authors: ["davesnx"]
-license: "BSD-2"
+license: "BSD-2-Clause"
 homepage: "https://github.com/davesnx/async_app"
 doc: "https://github.com/davesnx/async_app"
 bug-reports: "https://github.com/davesnx/async_app/issues"
