@@ -17,7 +17,7 @@ install:
 .PHONY: dev
 dev:
 	# Create a local opam switch and install deps
-	opam switch create . 4.10.0 --deps-only
+	opam switch create . 4.10.2 --deps-only
 	opam install -y ocaml-lsp-server dune
 	make install
 
