@@ -45,6 +45,10 @@ run:
 run-debug:
 	# Build and run the app with Opium's internal debug messages visible
 	$(DUNE) exec $(project_name) -- --debug
+.PHONY: db
+db:
+	# Build and run the database docker container
+	docker-compose -f docker-compose.dev.yml up -d
 
 .PHONY: migrate
 migrate:
