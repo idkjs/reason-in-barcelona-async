@@ -45,7 +45,7 @@ yarn webpack:dev
 
 Build and run the server:
 ```bash
-# Make sure you run `direnv allow .` inside the directory (you would only need to do it once)
+# Make sure you run `direnv allow .` inside the ``directory (you would only need to do it once)
 make run
 ```
 
@@ -103,3 +103,27 @@ To deploy the app after changes, just run `git push heroku master`.
 - Amazing tutorial to create a lightweight OCaml webapp: https://shonfeder.gitlab.io/ocaml_webapp/
 - Deploying native Reason/OCaml with Zeit's now.sh: https://jaredforsyth.com/posts/deploying-native-reason-ocaml-with-now-sh/
 - Deploying OCaml server on Heroku: https://medium.com/@aleksandrasays/deploying-ocaml-server-on-heroku-f91dcac11f11
+
+### running for real
+
+- run webpack-dev-server
+```sh
+> yarn server
+$ webpack-dev-server
+ℹ ｢wds｣: Project is running at http://localhost:8000/
+ℹ ｢wds｣: webpack output is served from /
+ℹ ｢wds｣: Content not from webpack is served from /Users/zish/git/ml-in-barcelona/server/static
+ℹ ｢wds｣: 404s will fallback to /index.html
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: Hash: 3c1ec16ae71351679d04
+```
+- run the db
+```sh
+> make watch
+# Build and run the app with Opium's internal debug messages visible
+opam exec -- dune exec async_app -- --debug
+# or
+> make run
+```
+
+This app is rendering the same content on 3000 and 8000. Im not sure why or what is the point.
